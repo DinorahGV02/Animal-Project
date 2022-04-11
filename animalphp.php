@@ -1,5 +1,8 @@
 <?php
-$connect = mysqli_connect("localhost","root","root");
+$servername="localhost";
+$username="root";
+$password= "root";
+$connect=mysqli_connect($servername,$username,$password);
 if(!$connect) die("ERROR not working");
 $sql =
 		"INSERT INTO Animals.animal (animal_name, habitat, animal_type)
