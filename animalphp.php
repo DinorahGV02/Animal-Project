@@ -1,4 +1,4 @@
-<? php
+<?php
 $connect = mysqli_connect("localhost","root","root");
 if(!$connect) die("ERROR not working");
 $sql =
