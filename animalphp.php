@@ -1,6 +1,6 @@
 <? php
 $connect = mysqli_connect("localhost","root","root");
-if(!$connect) die("Oopsie ERROR");
+if(!$connect) die("ERROR not working");
 $sql =
 		"INSERT INTO Animals.animal (animal_name, habitat, animal_type)
 		VALUES ('".$_REQUEST['Name']."','".$_REQUEST['Habitat']."','".$_REQUEST['Type']."')";
