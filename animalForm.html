@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <header>
+        <script>
+            function check(){
+                if(document.getElementById("Name").value == '')
+                {
+                    alert("ANIMAL NAME FIELD IS EMPTY");
+                    return false;
+                }
+	            else
+                if(document.getElementById("Type").value == '')
+                {
+                    alert("ANIMAL TYPE FIELD IS EMPTY");
+                    return false;
+                }
+                else
+                if(document.getElementById("Habitat").value == '')
+                {
+                    alert("HABITAT TYPE FIELD IS EMPTY");
+                    return false;
+                }
+                else
+                    return true;
+            }
+        </script>
+        <style>
+            body{
+                background-color: silver;
+            }
+            .TitleForm{
+                font-weight: bold;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: italic;
+                font-weight: bolder;
+                text-decoration: underline;
+                margin-bottom: 30px;
+            }
+            p{
+                margin-top: 30px;
+                margin-bottom:20px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .Camilo{
+                color:white;
+                background-color: red;
+                margin:10px;
+                padding: 10px;
+                border-radius: 20px;
+                border-color:red;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+            }
+            .Zey{
+                color:white;
+                background-color: Purple;
+                margin:10px;
+                padding: 10px;
+                border-radius: 20px;
+                border-color:Purple;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+            }
+
+            .Dinorah{
+                color:white;
+                background-color: Pink;
+                margin:10px;
+                padding: 10px;
+                border-radius: 20px;
+                border-color:Pink;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+            }
+
+            .subTitle{
+                font-weight: bold;
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: italic;
+                font-weight: bolder;
+                text-decoration: underline;
+                margin-bottom: 10px;
+            }
+
+        </style>
+    </header>
+    <body>
+        <h1 class="TitleForm">Animal Form</h1>
+        <h3 class="subTitle">FORM BY:</h3>
+        <button class="Camilo">Camilo</button>
+        <button class="Dinorah">Dinorah</button>
+        <button class="Zey">Aliye</button>
+        <form form action="" method="post" onsubmit="">
+            <p>Enter Animal Name: </p>
+            <input type="Text" id="Name" name="Name">
+            <p>Enter Animal Type: </p>
+            <input type="Text" id="Type" name="Type">
+            <p>Enter Habitat Type: </p>
+            <select name="Habitat" id="Habitat">
+                <Option value="Sea">Sea</Option>
+                <Option value="Land">Land</Option>
+                <Option value="Air">Air</Option>
+            </select>
+            <br><br>
+            <input type="Submit" value="SUBMIT" onclick="check()">
+        </form>
+    </body>
+</html>
