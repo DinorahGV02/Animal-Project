@@ -10,4 +10,4 @@ $sql =
 		else
 			echo "ANIMAL NOT INSERTED";
 
-<?
+?>
