@@ -86,6 +86,28 @@
                 text-decoration: underline;
                 margin-bottom: 10px;
             }
+            .enter{
+                background-color:black;
+                color:white;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+                transition:opacity 1s;
+            }
+            .enter:hover{
+                opacity: .7;
+            }
+            .enter:active{
+                opacity: .4;
+            }
+
+            .menu{
+                width: 100px;
+                padding:10px;
+                font-weight: bold;
+            }
 
         </style>
     </header>
@@ -95,19 +117,19 @@
         <button class="Camilo">Camilo</button>
         <button class="Dinorah">Dinorah</button>
         <button class="Zey">Aliye</button>
-        <form form action="animalphp.php" method="post" onsubmit="return check();">
+        <form form action="" method="post" onsubmit="">
             <p>Enter Animal Name: </p>
             <input type="Text" id="Name" name="Name">
             <p>Enter Animal Type: </p>
             <input type="Text" id="Type" name="Type">
             <p>Enter Habitat Type: </p>
-            <select name="Habitat" id="Habitat">
+            <select class="menu" name="Habitat" id="Habitat">
                 <Option value="Sea">Sea</Option>
                 <Option value="Land">Land</Option>
                 <Option value="Air">Air</Option>
             </select>
             <br><br>
-            <input type="Submit" value="SUBMIT" onclick="check()">
+            <input class="enter" type="Submit" value="SUBMIT" onclick="check()">
         </form>
     </body>
 </html>
